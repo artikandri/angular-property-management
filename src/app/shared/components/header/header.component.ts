@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'src/app/core/models';
+import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit{
+  faSearch = faSearch;
+  faBell = faBell;
    menuItems : MenuItem[] = [
     {
       text: "Dashboard",
@@ -36,6 +39,15 @@ export class HeaderComponent {
     }
 ]
 
+constructor() {}
 
+ngOnInit(): void {
+  this.menuItems = this.menuItems.map((item : MenuItem) => {
+    return {
+      ...item,
+      isActive: window.location.pathname === item.url
+    }
+  })
+}
 
 }

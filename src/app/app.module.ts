@@ -10,7 +10,6 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { MainLayoutComponent } from './shared/layout/main-layout/main-layout.component';
 import { NotFoundComponent } from './modules/common/pages/not-found/not-found.component';
-import { ButtonComponent } from './shared/components/button/button.component';
 
 @NgModule({
   imports: [
@@ -25,7 +24,6 @@ import { ButtonComponent } from './shared/components/button/button.component';
     FooterComponent,
     MainLayoutComponent,
     NotFoundComponent,
-    ButtonComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]
