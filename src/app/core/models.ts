@@ -25,12 +25,12 @@ export class SummaryItem {
 
 export class StepItem {
     instruction: String
-    current: Number
-    total: Number
+    current: number
+    total: number
     icon: any
     type: String
 
-    constructor(instruction: String, current: Number, total: Number, icon: any, type: String) {
+    constructor(instruction: String, current: number, total: number, icon: any, type: String) {
         this.instruction = instruction
         this.current = current
         this.total = total
@@ -103,8 +103,8 @@ export interface SummaryCardProps {
 
 export interface StepCardProps {
     instruction: String
-    current: Number
-    total: Number
+    current: number
+    total: number
     icon: any
     type: String
   }

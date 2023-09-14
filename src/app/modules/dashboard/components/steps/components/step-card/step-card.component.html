@@ -4,12 +4,8 @@
         {{ props?.instruction }}
     </h6>
     <div>
-        <span>
-            {{ props?.current }}
-        </span>
-        /
-        <span>
-            {{ props?.total }}
-        </span>
+    <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4" [ngClass]="progressBackground">
+        <div class="bg-blue-600 h-1.5 rounded-full" [style]="progressStyle" [ngClass]="progressForeground"></div>
+        </div>
     </div>
 </div>

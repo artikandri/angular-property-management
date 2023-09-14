@@ -18,3 +18,50 @@ export function getButtonClassName(type: String) : String {
     }
     return className
 }
+
+
+
+export function getProgressForeground(type: String) : String {
+    let className : String = '';
+    switch(type) {
+        case 'primary':
+        className += 'bg-blue-600';
+        break;
+        case 'danger':
+        className += 'bg-red-600';
+        break;
+        case 'success':
+        className += ' bg-green-600 ';
+        break;
+        case 'disabled':
+        className += ' bg-gray-400';
+        break;
+        default: 
+        className += 'bg-white';
+        break;
+    }
+    return className
+}
+
+
+export function getProgressBackground(type: String) : String {
+    let className : String = '';
+    switch(type) {
+        case 'primary':
+        className += 'bg-blue-300';
+        break;
+        case 'danger':
+        className += 'bg-red-300';
+        break;
+        case 'success':
+        className += ' bg-green-300 ';
+        break;
+        case 'disabled':
+        className += ' bg-gray-200';
+        break;
+        default: 
+        className += 'bg-gray-200';
+        break;
+    }
+    return className
+}

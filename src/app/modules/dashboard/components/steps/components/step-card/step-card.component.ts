@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { StepCardProps } from 'src/app/core/models';
+import { getProgressBackground, getProgressForeground } from 'src/app/utils/styling';
 
 @Component({
   selector: 'app-step-card',
@@ -7,8 +8,23 @@ import { StepCardProps } from 'src/app/core/models';
   styleUrls: ['./step-card.component.scss']
 })
 
-export class StepCardComponent {
+export class StepCardComponent implements OnInit {
   @Input() props?: StepCardProps;
+  progressStyle: String = "";
+  progressForeground: String = "";
+  progressBackground: String = "";
 
   constructor() {}
+
+  ngOnInit(): void {
+    if(this.props?.total && this.props?.current) {
+      const progress : number = (this.props?.current / this.props?.total) * 100;
+      this.progressStyle = `width: ${progress}%`;
+    }
+    if(this.props?.type) {
+      this.progressForeground = getProgressForeground(this.props?.type);
+      this.progressBackground = getProgressBackground(this.props?.type);  
+    }
+  }
+
 }
