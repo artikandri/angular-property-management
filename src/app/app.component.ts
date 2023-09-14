@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dashboard2';
+  title = 'Property Management Dashboard';
+  description = 'Adapted from https://dribbble.com/shots/22540989-Property-Management-Dashboard';
 }
