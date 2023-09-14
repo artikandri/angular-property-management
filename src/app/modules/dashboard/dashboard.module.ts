@@ -1,15 +1,40 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { GreetingsComponent } from './components/greetings/greetings.component';
+import { ActivityComponent } from './components/activity/activity.component';
+import { SummaryComponent } from './components/summary/summary.component';
+import { StepsComponent } from './components/steps/steps.component';
+import { BookingsComponent } from './components/bookings/bookings.component';
+import { SummaryCardComponent } from './components/summary/components/summary-card/summary-card.component';
+import { StepCardComponent } from './components/steps/components/step-card/step-card.component';
+import { BookingCardComponent } from './components/bookings/components/booking-card/booking-card.component';
+import { ActivityCardComponent } from './components/activity/components/activity-card/activity-card.component';
+import { CalendarComponent } from 'src/app/shared/components/calendar/calendar.component';
+import { LabelComponent } from 'src/app/shared/components/label/label.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    GreetingsComponent,
+    ActivityComponent,
+    SummaryComponent,
+    StepsComponent,
+    BookingsComponent,
+    StepCardComponent,
+    SummaryCardComponent,
+    StepCardComponent,
+    BookingCardComponent,
+    ActivityCardComponent,
+    CalendarComponent,
+    LabelComponent
   ],
   imports: [
     CommonModule,
+    FontAwesomeModule,
   ]
 })
 export class DashboardModule { }

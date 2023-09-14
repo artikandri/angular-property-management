@@ -1,0 +1,17 @@
+<div>
+    <div *ngIf="!!activity?.['datetime']">
+        <app-calendar [date]="activity?.['datetime']"></app-calendar>
+    </div>
+    <div>
+        <h3>{{activity?.title }}</h3>
+        <p>
+            <span> {{ activity?.['time'] }} </span>
+            <span> {{ activity?.address }} </span>
+        </p>
+        <div>
+            <fa-icon [icon]="icons.faLink"></fa-icon>
+            <span>2</span>
+        </div>
+    </div>
+    <app-label [props]="{'type': 'info', 'text': 'Question'}"></app-label>
+</div>

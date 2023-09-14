@@ -1,0 +1,18 @@
+<nav>
+    <ul>
+        <li *ngFor="let menuItem of menuItems">
+            <a [routerLink]="[menuItem.url]">
+                {{ menuItem.text }}
+            </a>
+        </li>
+    </ul>
+    <a href="#">
+        Search
+    </a>
+    <a href="#">
+        Notification
+    </a>
+    <a [routerLink]="['/profile']">
+        <img src="https://xsgames.co/randomusers/assets/avatars/female/7.jpg" />
+    </a>
+</nav>

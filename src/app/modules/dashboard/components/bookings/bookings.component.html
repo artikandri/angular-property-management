@@ -1,1 +1,13 @@
-<p>bookings works!</p>
+<div>
+    <div>
+        <h2>New bookings</h2>
+        <span>2</span>
+    </div>
+    <div>
+        <ul>
+            <li *ngFor="let booking of bookings">
+                <app-booking-card [props]="booking"></app-booking-card>
+            </li>
+        </ul>
+    </div>
+</div>
