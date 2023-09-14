@@ -1,4 +1,10 @@
-# Dashboard2
+# Angular Property Management
+
+## Original Design 
+
+![image](https://github.com/artikandri/angular-property-management/assets/12537724/a2b98e0c-7d70-4d99-9ce9-82cd875b21ce)
+
+## About
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
