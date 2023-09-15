@@ -4,13 +4,12 @@
 
 ![image](https://github.com/artikandri/angular-property-management/assets/12537724/6ed187d8-a757-42f8-b528-0165a42c69ad)
 
+![image](https://github.com/artikandri/angular-property-management/assets/12537724/76254e6f-67e3-45ab-b38f-72dd7d6e3a81)
+
 
 ## Original Design 
 
 ![image](https://github.com/artikandri/angular-property-management/assets/12537724/a2b98e0c-7d70-4d99-9ce9-82cd875b21ce)
-
-![image](https://github.com/artikandri/angular-property-management/assets/12537724/76254e6f-67e3-45ab-b38f-72dd7d6e3a81)
-
 
 ## About
 
