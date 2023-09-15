@@ -1,5 +1,10 @@
 # Angular Property Management
 
+## Screenshots 
+
+![image](https://github.com/artikandri/angular-property-management/assets/12537724/6ed187d8-a757-42f8-b528-0165a42c69ad)
+
+
 ## Original Design 
 
 ![image](https://github.com/artikandri/angular-property-management/assets/12537724/a2b98e0c-7d70-4d99-9ce9-82cd875b21ce)
