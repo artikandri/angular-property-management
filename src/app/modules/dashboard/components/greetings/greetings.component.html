@@ -1,4 +1,4 @@
-<div class="flex flex-row pt-12 pb-12">
+<div class="flex flex-col pt-12 pb-12 sm:flex-row">
     <div class="flex flex-row">
         <div class="mr-5 hidden md:block">
             <img class="w-16 h-16 rounded-full" src="https://xsgames.co/randomusers/assets/avatars/female/7.jpg" />
@@ -8,10 +8,8 @@
             <p class="text-gray-500 text-lg">Here's an overview of your properties</p>
         </div>
     </div>
-    <div class="flex ml-auto mr-2">
-       <app-dropdown [props]="dropdownProps"></app-dropdown>
-    </div>
-    <div>
+    <div class="flex mt-6 sm:mt-0 sm:ml-auto mr-2">
+        <app-dropdown class="mr-2" [props]="dropdownProps"></app-dropdown>
         <app-button [props]="{'type': 'success', 'text':'Analytics'}"></app-button>
     </div>
 </div>
