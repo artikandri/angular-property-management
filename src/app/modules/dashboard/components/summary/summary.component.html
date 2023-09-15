@@ -3,17 +3,17 @@
     <ul class="flex align-middle gap-4 flex-col sm:flex-row flex-wrap xl:flex-nowrap">
         <li class="w-full sm:w-[calc(50%_-_.5rem)] xl:w-1/4" >
             <app-summary-card [props]="{'title': 'Check in', 'iconUrl': 'assets/icons/key.png'}">
-                <span class="text-3xl  text-gray-700">12</span>
+                <span class="text-3xl font-semibold text-gray-700">12</span>
             </app-summary-card>
         </li>
         <li class="w-full sm:w-[calc(50%_-_.5rem)] xl:w-1/4">
             <app-summary-card [props]="{'title': 'Check out', 'iconUrl': 'assets/icons/backpack.png'}">
-                <span class="text-3xl  text-gray-700">12</span>
+                <span class="text-3xl font-semibold text-gray-700">12</span>
             </app-summary-card>
         </li>
         <li class="w-full sm:w-[calc(50%_-_.5rem)] xl:w-1/4">
             <app-summary-card [props]="{'title': 'Earnings', 'iconUrl': 'assets/icons/money.png'}">
-                <div>
+                <div class="font-semibold">
                     <span class="text-xl  text-gray-700">$ </span>
                     <span class="text-3xl  text-gray-700">{{ earningsString }}</span>
                     <span class="text-xl  text-gray-500">,{{ earningsDecimal }}</span>
@@ -23,7 +23,7 @@
         <li class="w-full sm:w-[calc(50%_-_.5rem)] xl:w-1/4">
             <app-summary-card [props]="{'title': 'Reviews', 'iconUrl': 'assets/icons/podium.png'}">
                 <div>
-                <span class="text-3xl  text-gray-700">4.5</span>
+                <span class="text-3xl font-semibold  text-gray-700">4.5</span>
                 <span class="text-xl ml-3 text-gray-500">(1000)</span>
                 </div>
             </app-summary-card>

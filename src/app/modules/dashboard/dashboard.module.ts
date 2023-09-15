@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ComponentsModule } from 'src/app/shared/components/components.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -12,10 +13,6 @@ import { SummaryCardComponent } from './components/summary/components/summary-ca
 import { StepCardComponent } from './components/steps/components/step-card/step-card.component';
 import { BookingCardComponent } from './components/bookings/components/booking-card/booking-card.component';
 import { ActivityCardComponent } from './components/activity/components/activity-card/activity-card.component';
-import { CalendarComponent } from 'src/app/shared/components/calendar/calendar.component';
-import { LabelComponent } from 'src/app/shared/components/label/label.component';
-import { ButtonComponent } from 'src/app/shared/components/button/button.component';
-import { DropdownComponent } from 'src/app/shared/components/dropdown/dropdown.component';
 
 
 @NgModule({
@@ -30,15 +27,12 @@ import { DropdownComponent } from 'src/app/shared/components/dropdown/dropdown.c
     SummaryCardComponent,
     StepCardComponent,
     BookingCardComponent,
-    ActivityCardComponent,
-    CalendarComponent,
-    LabelComponent,
-    ButtonComponent,
-    DropdownComponent
+    ActivityCardComponent
   ],
   imports: [
     CommonModule,
-    FontAwesomeModule,
+    ComponentsModule,
+    FontAwesomeModule
   ]
 })
 export class DashboardModule { }

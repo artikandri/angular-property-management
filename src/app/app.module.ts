@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fas } from '@fortawesome/free-solid-svg-icons';
+import { ProfileModule } from './modules/profile/profile.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
@@ -16,7 +17,8 @@ import { NotFoundComponent } from './modules/common/pages/not-found/not-found.co
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    DashboardModule
+    DashboardModule,
+    ProfileModule
   ],
   declarations: [
     AppComponent,

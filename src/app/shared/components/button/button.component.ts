@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ButtonProps } from 'src/app/core/models';
 import { getButtonClassName } from 'src/app/utils/styling';
 
 @Component({
@@ -9,7 +8,7 @@ import { getButtonClassName } from 'src/app/utils/styling';
 })
 export class ButtonComponent implements OnInit {
 
-  @Input() props? : ButtonProps;
+  @Input() props? : any;
   className: String = "";
 
   constructor() {}
