@@ -30,7 +30,6 @@ export class DropdownComponent implements OnInit {
 
   onDropdownClick() : void {
     this.isActive = !this.isActive;
-    console.log(this.isActive)
   }
 }
 
