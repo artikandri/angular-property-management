@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { getDayFromDate, getMonthNameFromDate } from 'src/app/utils/datetime';
 
 @Component({
   selector: 'app-calendar',
@@ -14,6 +15,10 @@ export class CalendarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    if(this.date) {
+      this.month = getMonthNameFromDate(this.date);
+      this.dateInMonth = getDayFromDate(this.date);
+    }
   }
 
 }

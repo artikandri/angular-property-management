@@ -1,9 +1,11 @@
-<div>
-    <div>
-        <h2>New activity</h2>
-        <span>2</span>
+<div class="">
+    <div class="flex flex-row items-start">
+        <h2 class="text-2xl font-semibold mb-4">New activity</h2>
+        <span *ngIf="notificationCount" class="h-6 w-8 inline-block ml-1 bg-green-500 rounded-full text-center align-center">
+            <span class="text-sm text-white font-semibold align-center">{{ notificationCount }}</span>
+        </span>
     </div>
-    <div>
+    <div class="bg-white border-solid border-2 border-gray-200 px-6 py-4 rounded-2xl">
         <ul>
             <li *ngFor="let activity of activities">
                 <app-activity-card [props]="activity"></app-activity-card>

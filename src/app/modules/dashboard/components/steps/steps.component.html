@@ -1,4 +1,6 @@
 <div>
-    <h2>Your next steps</h2>
-    <app-step-card *ngFor="let step of steps" [props]="step"></app-step-card>
+    <h2 class="text-2xl font-semibold mb-4">Your next steps</h2>
+    <div class="flex flex-col gap-4 w-full md:flex-row">
+        <app-step-card *ngFor="let step of steps" [props]="step" class="w-full"></app-step-card>
+    </div>
 </div>

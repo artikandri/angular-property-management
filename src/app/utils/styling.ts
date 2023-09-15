@@ -65,3 +65,25 @@ export function getProgressBackground(type: String) : String {
     }
     return className
 }
+
+export function getProgressText(type: String) : String {
+    let className : String = '';
+    switch(type) {
+        case 'primary':
+        className += 'text-blue-600';
+        break;
+        case 'danger':
+        className += 'text-red-600';
+        break;
+        case 'success':
+        className += ' text-green-600 ';
+        break;
+        case 'disabled':
+        className += ' text-gray-400';
+        break;
+        default: 
+        className += 'text-gray-600';
+        break;
+    }
+    return className
+}

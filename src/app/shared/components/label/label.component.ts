@@ -10,7 +10,7 @@ import { LabelProps } from 'src/app/core/models';
 export class LabelComponent implements OnInit {
 
   @Input() props? : LabelProps;
-  className : String = 'rounded-full px-4 py-2';
+  className : String = 'rounded-full px-2 py-1';
 
   constructor() {}
 
@@ -23,10 +23,19 @@ export class LabelComponent implements OnInit {
 }
 
 function getClassName(labelType: String) : String {
-  let className = 'rounded-full px-4 py-2';
+  let className = 'rounded-full px-2 py-1';
   switch(labelType) {
-    case 'primary':
+    case 'info':
       className += ' bg-blue-100 text-blue-700';
+      break;
+    case 'success':
+      className += ' bg-green-100 text-green-700';
+      break;
+    case 'danger':
+      className += ' bg-red-100 text-red-700';
+      break;
+    case 'warning':
+      className += ' bg-orange-100 text-orange-700';
       break;
     default:
       className += ' bg-gray-100 text-gray-700';

@@ -15,8 +15,8 @@
             <app-summary-card [props]="{'title': 'Earnings', 'iconUrl': 'assets/icons/money.png'}">
                 <div>
                     <span class="text-xl  text-gray-700">$ </span>
-                    <span class="text-3xl  text-gray-700">2687</span>
-                    <span class="text-xl  text-gray-500">,90</span>
+                    <span class="text-3xl  text-gray-700">{{ earningsString }}</span>
+                    <span class="text-xl  text-gray-500">,{{ earningsDecimal }}</span>
                 </div>
             </app-summary-card>
         </li>

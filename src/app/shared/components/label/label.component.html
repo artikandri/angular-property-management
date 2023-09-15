@@ -1,5 +1,5 @@
-<div *ngIf="!!className">
-    <span [class]="className"  >
+<div *ngIf="!!className" class="">
+    <span [ngClass]="className" class="text-sm" >
         {{ props?.['text'] }}
     </span>
 </div>

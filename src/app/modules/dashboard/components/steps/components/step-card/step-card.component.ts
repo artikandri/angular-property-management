@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { StepCardProps } from 'src/app/core/models';
-import { getProgressBackground, getProgressForeground } from 'src/app/utils/styling';
+import { getProgressBackground, getProgressForeground, getProgressText } from 'src/app/utils/styling';
 
 @Component({
   selector: 'app-step-card',
@@ -13,6 +13,7 @@ export class StepCardComponent implements OnInit {
   progressStyle: String = "";
   progressForeground: String = "";
   progressBackground: String = "";
+  iconColor : String = "";
 
   constructor() {}
 
@@ -24,6 +25,7 @@ export class StepCardComponent implements OnInit {
     if(this.props?.type) {
       this.progressForeground = getProgressForeground(this.props?.type);
       this.progressBackground = getProgressBackground(this.props?.type);  
+      this.iconColor = getProgressText(this.props?.type);
     }
   }
 
