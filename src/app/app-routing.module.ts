@@ -22,7 +22,10 @@ const routes: Routes = [
   },
   
     { path: '**', pathMatch: 'full', 
-        component: NotFoundComponent 
+        component: MainLayoutComponent,
+        children: [
+            { path: '', component: NotFoundComponent }
+        ] 
     },
 
 ];
